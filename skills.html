@@ -1,119 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/skills.css">
-  <link rel="stylesheet" href="styles/shared.css">
-</head>
-<body class="orbitron-normal">
-  <header>
-    <nav>
-      <div class="nav-container">
-        <div class="nav-title">
-          <h2>Portfolio</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+  </head>
+  <body class="orbitron-normal">
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-title">
+            <h2>Portfolio</h2>
+          </div>
+          <div class="nav-content">
+            <hr
+              style="
+                flex-grow: 1;
+                height: 100%;
+                margin-right: 12px;
+                border-color: yellow;
+              "
+            />
+            <ul style="display: flex; align-items: center">
+              <li><a href="/"> Home </a></li>
+              <span class="dot"></span>
+              <li><a href="./skills.html"> Skills </a></li>
+              <span class="dot"></span>
+              <li><a href="./projects.html">Projects</a></li>
+              <span class="dot"></span>
+              <li><a href="./about.html">About Me</a></li>
+            </ul>
+            <hr style="flex-grow: 1; height: 100%; border-color: yellow" />
+          </div>
+          <div class="nav-socials">
+            <span>
+              <i
+                class="fa-brands fa-github fa-xl icon"
+                style="margin-right: 12px"
+              ></i>
+            </span>
+            <span>
+              <i
+                class="fab fa-google fa-xl icon"
+                style="margin-right: 12px"
+              ></i>
+            </span>
+            <span> <i class="fa-brands fa-discord fa-xl icon"></i> </span>
+          </div>
+          <div class="nav-hamburger">
+            <i
+              class="fa-solid fa-bars fa-2xl icon"
+              style="margin-right: 20px"
+            ></i>
+          </div>
         </div>
-        <div class="nav-content">
-          <hr style="flex-grow: 1; height: 100%; margin-right: 12px; border-color: yellow;">
-          <ul style="display: flex; align-items: center;">
-            <li><a href="/"> Home </a></li>
-            <span class="dot"></span>
-            <li><a href="./skills.html"> Skills </a></li>
-            <span class="dot"></span>
-            <li><a href="./projects.html">Projects</a></li>
-            <span class="dot"></span>
-            <li><a href="./about.html">About Me</a></li>
-          </ul>
-          <hr style="flex-grow: 1; height: 100%; border-color: yellow;">
-        </div>
-        <div class="nav-socials">
-          <span> <i class="fa-brands fa-github fa-xl icon" style="margin-right: 12px;"></i> </span>
-          <span> <i class="fab fa-google fa-xl icon" style="margin-right: 12px;"></i> </span>
-          <span> <i class="fa-brands fa-discord fa-xl icon"></i> </span>
+        <hr style="border-color: yellow" />
+        <ul class="nav-dropdown">
+          <li><a href="/">Home</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <div class="btn-container">
+        <button id="language-btn" class="btn-primary skill-btn">
+          Languages
+        </button>
+        <button id="database-btn" class="btn-primary skill-btn">
+          Databases
+        </button>
+        <button id="tool-btn" class="btn-primary skill-btn">Tools</button>
+        <button id="library-btn" class="btn-primary skill-btn">
+          Libraries
+        </button>
+        <button id="framework-btn" class="btn-primary skill-btn">
+          Frameworks
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fab fa-windows"></i>
+              <h3>Windows</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                delectus illum perferendis maiores quia molestias vitae fugiat
+                aspernatur alias corporis?
+              </p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
         </div>
-        <div class="nav-hamburger">
-          <i class="fa-solid fa-bars fa-2xl icon" style="margin-right: 20px;"></i>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fab fa-android"></i>
+              <h3>Android</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                delectus illum perferendis maiores quia molestias vitae fugiat
+                aspernatur alias corporis?
+              </p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fab fa-apple"></i>
+              <h3>Apple</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                delectus illum perferendis maiores quia molestias vitae fugiat
+                aspernatur alias corporis?
+              </p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr style="border-color: yellow;">
-      <ul class="nav-dropdown">
-        <li><a href="/">Home</a></li>
-        <li><a href="./skills.html">Skills</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="./about.html">About Me</a></li>
-      </ul>
-    </nav>
-  </header>
+    </main>
 
-  <main>
-    <div class="btn-container">
-      <button id="language-btn" class="btn-primary skill-btn">Languages</button>
-      <button id="database-btn" class="btn-primary skill-btn">Databases</button>
-      <button id="tool-btn" class="btn-primary skill-btn">Tools</button>
-      <button id="library-btn" class="btn-primary skill-btn">Libraries</button>
-      <button id="framework-btn" class="btn-primary skill-btn">Frameworks</button>
-    </div>
+    <script>
+      const hamburger = document.querySelector(".nav-hamburger");
+      const dropdown = document.querySelector(".nav-dropdown");
 
-    <div class="container">
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-             <i class="fab fa-windows"></i>            
-            <h3>Windows</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-            <a href="#" type="button">Read More</a>
-          </div>
-        </div>
-     </div>
-     
-     <div class="card">
-        <div class="face face1">
-          <div class="content">
-       <i class="fab fa-android"></i>               <h3>Android</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-            <a href="#" type="button">Read More</a>
-          </div>
-        </div>
-     </div>
-     
-     
-     <div class="card">
-        <div class="face face1">
-          <div class="content">
-            <i class="fab fa-apple"></i>
-             <h3>Apple</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-            <a href="#" type="button">Read More</a>
-          </div>
-        </div>
-     </div>
-     
-   </div>
-  </main>
+      hamburger.addEventListener("click", () => {
+        dropdown.classList.toggle("active");
+      });
+    </script>
 
-  <script>
-    const hamburger = document.querySelector('.nav-hamburger');
-    const dropdown = document.querySelector('.nav-dropdown');
-  
-    hamburger.addEventListener('click', () => {
-      dropdown.classList.toggle('active');
-    });
-  </script>
-
-  <script src="https://kit.fontawesome.com/791c82d1b4.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/791c82d1b4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
