@@ -151,6 +151,22 @@ h2 {
   cursor: pointer;
 }
 
+/* *Tech Section */
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.tech-container h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 32px;
+  text-shadow: none;
+  font-style: italic;
+}
+
 @media screen and (max-width: 768px) {
   /* *Banner */
   h1 {
