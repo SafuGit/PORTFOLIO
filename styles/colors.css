@@ -1,0 +1,47 @@
+/* Neon Effect Classes */
+.neon-red {
+  color: #FF5161;
+  text-shadow: 0 0 5px #D30302, 0 0 10px #D30302, 0 0 70px #D30302;
+}
+
+.neon-red-bg {
+  background-color: #FF5161;
+  color: #ffffff;
+  text-shadow: 0 0 5px #D30302, 0 0 10px #D30302, 0 0 70px #D30302;
+}
+
+.neon-pink {
+  color: #FF53CD;
+  text-shadow: 0 0 5px #E10361, 0 0 10px #E10361, 0 0 70px #E10361;
+}
+
+.neon-purple {
+  color: #9461FD;
+  text-shadow: 0 0 5px #4003E6, 0 0 10px #4003E6, 0 0 70px #4003E6;
+}
+
+.neon-blue {
+  color: #2DD9FE;
+  text-shadow: 0 0 5px #00A3D5, 0 0 10px #00A3D5, 0 0 70px #00A3D5;
+}
+
+.neon-green {
+  color: #00FE9B;
+  text-shadow: 0 0 5px #02C435, 0 0 10px #02C435, 0 0 70px #02C435;
+}
+
+.neon-yellow {
+  color: #FFDB4E;
+  text-shadow: 0 0 5px #B48505, 0 0 10px #B48505, 0 0 70px #B48505;
+}
+
+.neon-yellow-bg {
+  background-color: #FFDB4E;
+  color: #000000;
+  text-shadow: 0 0 5px #B48505, 0 0 10px #B48505, 0 0 70px #B48505;
+}
+
+.neon-white {
+  color: #FEFEFE;
+  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 70px #FFFFFF;
+}

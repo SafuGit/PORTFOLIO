@@ -1,0 +1,117 @@
+/* *Banner */
+
+h1 {
+  color: yellow;
+  font-size: 50px;
+  text-shadow: 0 0 5px #fff,
+  0 0 10px #fff,  
+  0 0 70px yellow;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  text-shadow: 0 0 5px #fff,
+  0 0 10px #fff,  
+  0 0 70px white;
+}
+
+.info-subtitle {
+  color: greenyellow;
+  font-size: 32px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+  flex-grow: 0;
+  margin-top: 50px;
+  /* flex-wrap: wrap; */
+}
+
+.info-content {
+  margin-right: 32px;
+}
+
+.info-img {
+  display: flex;
+  align-items: center;
+  /* height: 300px; */
+}
+
+.info-container img {
+  /* max-height: 100%;
+  max-width: 100%; */
+  border-radius: 360px;
+  max-width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+  flex: 1 1 auto;
+  /* Allow images to grow and shrink */
+  object-fit: cover;
+}
+
+#contact-btn {
+  padding: 16px;
+  transform: skewx(-20deg);
+  border: none;
+  font-family: inherit;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+#projects-btn {
+  padding: 16px;
+  transform: skewx(-20deg);
+  border: none;
+  font-family: inherit;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+#about-btn {
+  padding: 16px;
+  transform: skewx(-20deg);
+  border: none;
+  font-family: inherit;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+/* *Navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-container li {
+  display: inline-block;
+  color: greenyellow;
+  margin-right: 12px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  display:  inline-block;
+  margin-right: 12px;
+}
+
+.nav-socials {
+  display: flex;
+  justify-content: space-evenly;
+}
