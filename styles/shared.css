@@ -38,6 +38,13 @@ body {
   color: white;
 }
 
+h2 {
+  color: white;
+  font-size: 32px;
+  text-shadow: 0 0 5px #fff,
+  0 0 10px #fff,  
+  0 0 70px white;
+}
 
 /* *Navbar */
 .nav-container {
@@ -45,6 +52,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 50px;
+  background-color: black;
 }
 
 .nav-hamburger {
@@ -135,5 +143,10 @@ nav a {
 
   .nav-hamburger {
     display: block;
+  }
+
+  
+  .nav-dropdown.active {
+    display: flex;
   }
 }

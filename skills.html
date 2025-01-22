@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/shared.css">
+</head>
+<body class="orbitron-normal">
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="nav-content">
+          <hr style="flex-grow: 1; height: 100%; margin-right: 12px; border-color: yellow;">
+          <ul style="display: flex; align-items: center;">
+            <li><a href="/"> Home </a></li>
+            <span class="dot"></span>
+            <li><a href="./skills.html"> Skills </a></li>
+            <span class="dot"></span>
+            <li><a href="./projects.html">Projects</a></li>
+            <span class="dot"></span>
+            <li><a href="./about.html">About Me</a></li>
+          </ul>
+          <hr style="flex-grow: 1; height: 100%; border-color: yellow;">
+        </div>
+        <div class="nav-socials">
+          <span> <i class="fa-brands fa-github fa-xl icon" style="margin-right: 12px;"></i> </span>
+          <span> <i class="fab fa-google fa-xl icon" style="margin-right: 12px;"></i> </span>
+          <span> <i class="fa-brands fa-discord fa-xl icon"></i> </span>
+
+        </div>
+        <div class="nav-hamburger">
+          <i class="fa-solid fa-bars fa-2xl icon" style="margin-right: 20px;"></i>
+        </div>
+      </div>
+      <hr style="border-color: yellow;">
+      <ul class="nav-dropdown">
+        <li><a href="/">Home</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector('.nav-hamburger');
+    const dropdown = document.querySelector('.nav-dropdown');
+  
+    hamburger.addEventListener('click', () => {
+      dropdown.classList.toggle('active');
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/791c82d1b4.js" crossorigin="anonymous"></script>
+</body>
+</html>
