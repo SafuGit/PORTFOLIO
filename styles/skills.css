@@ -1,3 +1,17 @@
 body {
   background-color: #301934 !important;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.skill-btn {
+  background-color: darkmagenta;
+  border: 2px solid magenta !important;
+  color: white;
+}

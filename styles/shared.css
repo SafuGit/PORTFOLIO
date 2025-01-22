@@ -24,6 +24,17 @@ body {
   blink-caret .75s step-end infinite;
 }
 
+.btn-primary {
+  padding: 16px;
+  /* transform: skewx(-20deg); */
+  border-radius: 12px;
+  border: none;
+  font-family: inherit;
+  /* font-size: 24px; */
+  margin-right: 12px;
+  /* margin-top: 12px; */
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
