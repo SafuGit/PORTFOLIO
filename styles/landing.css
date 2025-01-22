@@ -54,6 +54,10 @@ h2 {
   object-fit: cover;
 }
 
+#img-mobile {
+  display: none;
+}
+
 #contact-btn {
   padding: 16px;
   transform: skewx(-20deg);
@@ -185,20 +189,28 @@ h2 {
   }
 
   .info-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .info-subtitle {
     font-size: 20px;
   }
 
-  .info-img {
+  #img-desktop {
     display: none;
+  }
+
+  #img-mobile {
+    display: block;
   }
 
   #about-btn, #projects-btn, #contact-btn {
     font-size: 16px;
     padding: 12px;
+  }
+
+  .info-content {
+    margin-right: 0px;
   }
 
   /* *Navbar */
