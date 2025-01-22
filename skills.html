@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   </head>
   <body class="orbitron-normal">
     <header>
@@ -68,10 +69,10 @@
 
     <main>
       <div class="btn-container">
-        <button id="language-btn" class="btn-primary skill-btn">
+        <button id="language-btn" class="btn-primary skill-btn" onclick="showLanguageCards()">
           Languages
         </button>
-        <button id="database-btn" class="btn-primary skill-btn">
+        <button id="database-btn" class="btn-primary skill-btn" onclick="showDatabaseCards()">
           Databases
         </button>
         <button id="tool-btn" class="btn-primary skill-btn">Tools</button>
@@ -83,67 +84,167 @@
         </button>
       </div>
 
-      <div class="container">
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <i class="fab fa-windows"></i>
-              <h3>Windows</h3>
+      <!-- TODO: Make it not take full height -->
+      <section class="skill-cards">
+        <div class="container" id="language-cards" style="display: none;">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-python-plain"></i>
+                <h3>Python</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
-                repudiandae, explicabo voluptate et hic cum ratione a. Officia
-                delectus illum perferendis maiores quia molestias vitae fugiat
-                aspernatur alias corporis?
-              </p>
-              <a href="#" type="button">Read More</a>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-dart-plain"></i>
+                <h3>Dart</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-javascript-plain"></i>
+                <h3>JavaScript-TypeScript</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
+            </div>
+          </div>
 
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <i class="fab fa-android"></i>
-              <h3>Android</h3>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-html5-plain"></i>
+                <h3>HTML-CSS</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
-                repudiandae, explicabo voluptate et hic cum ratione a. Officia
-                delectus illum perferendis maiores quia molestias vitae fugiat
-                aspernatur alias corporis?
-              </p>
-              <a href="#" type="button">Read More</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <i class="fab fa-apple"></i>
-              <h3>Apple</h3>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-java-plain"></i>
+                <h3>Java</h3>
+              </div>
             </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
-                repudiandae, explicabo voluptate et hic cum ratione a. Officia
-                delectus illum perferendis maiores quia molestias vitae fugiat
-                aspernatur alias corporis?
-              </p>
-              <a href="#" type="button">Read More</a>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="container" id="database-cards" style="display: none;">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-mysql-plain"></i>
+                <h3>MySQL</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-postgresql-plain"></i>
+                <h3>PostgreSQL</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-supabase-plain"></i>
+                <h3>Supabase</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab
+                  repudiandae, explicabo voluptate et hic cum ratione a. Officia
+                  delectus illum perferendis maiores quia molestias vitae fugiat
+                  aspernatur alias corporis?
+                </p>
+                <a href="#" type="button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script>
@@ -153,6 +254,24 @@
       hamburger.addEventListener("click", () => {
         dropdown.classList.toggle("active");
       });
+    </script>
+
+    <script>
+      function showCards(category) {
+        const cardContainers = document.querySelectorAll('.container');
+        cardContainers.forEach((container) => {
+          container.style.display = 'none';
+        });
+
+        const selectedCategory = document.getElementById(`${category}-cards`);
+        selectedCategory.style.display = 'flex';
+      }
+
+      document.getElementById("language-btn").addEventListener("click", () => showCards("language"));
+      document.getElementById("database-btn").addEventListener("click", () => showCards("database"));
+      document.getElementById("tool-btn").addEventListener("click", () => alert("Tools section not implemented yet."));
+      document.getElementById("library-btn").addEventListener("click", () => alert("Libraries section not implemented yet."));
+      document.getElementById("framework-btn").addEventListener("click", () => alert("Frameworks section not implemented yet."));
     </script>
 
     <script
