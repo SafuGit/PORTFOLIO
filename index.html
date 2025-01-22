@@ -34,6 +34,15 @@
           <span> <i class="fa-brands fa-discord fa-xl icon"></i> </span>
 
         </div>
+        <div class="nav-hamburger">
+          <i class="fa-solid fa-bars fa-2xl icon" style="margin-right: 20px;"></i>
+        </div>
+        <ul class="nav-dropdown">
+          <li>Home</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>About Me</li>
+        </ul>
       </div>
       <hr style="border-color: yellow;">
     </nav>
@@ -58,6 +67,16 @@
       </div>
     </section>
   </main>
+
+
+  <script>
+    const hamburger = document.querySelector('.nav-hamburger');
+    const dropdown = document.querySelector('.nav-dropdown');
+  
+    hamburger.addEventListener('click', () => {
+      dropdown.classList.toggle('active');
+    });
+  </script>
 
   <script src="https://kit.fontawesome.com/791c82d1b4.js" crossorigin="anonymous"></script>
 </body>

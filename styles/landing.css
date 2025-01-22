@@ -89,6 +89,10 @@ h2 {
   height: 50px;
 }
 
+.nav-hamburger {
+  display: none;
+}
+
 .nav-container li {
   display: inline-block;
   color: greenyellow;
@@ -114,4 +118,77 @@ h2 {
 .nav-socials {
   display: flex;
   justify-content: space-evenly;
+}
+
+.nav-dropdown {
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.nav-dropdown li {
+  padding: 10px 20px;
+  color: greenyellow;
+  border-bottom: 1px solid yellow;
+}
+
+.nav-hamburger {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  /* *Banner */
+  h1 {
+    font-size: 30px
+  }
+
+
+  .nav-dropdown.active {
+    display: flex;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-subtitle {
+    font-size: 20px;
+  }
+
+  .info-img {
+    display: none;
+  }
+
+  #about-btn, #projects-btn, #contact-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* *Navbar */
+
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .nav-title {
+    margin-left: 20px;
+  }
+
+  .nav-content {
+    display: none;
+  }
+
+  .nav-socials {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: block;
+  }
 }
