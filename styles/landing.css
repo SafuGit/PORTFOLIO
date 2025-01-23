@@ -67,6 +67,11 @@ h2 {
   margin-top: 12px;
 }
 
+#contact-btn:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
 #projects-btn {
   padding: 16px;
   transform: skewx(-20deg);
@@ -83,6 +88,10 @@ h2 {
   font-family: inherit;
   font-size: 24px;
   margin-top: 12px;
+}
+
+.info-socials {
+  margin-top: 20px;
 }
 
 /* *Tech Section */

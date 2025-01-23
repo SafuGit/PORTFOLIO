@@ -31,9 +31,9 @@
           <hr style="flex-grow: 1; height: 100%; border-color: yellow;">
         </div>
         <div class="nav-socials">
-          <span> <i class="fa-brands fa-github fa-xl icon" style="margin-right: 12px;"></i> </span>
-          <span> <i class="fab fa-google fa-xl icon" style="margin-right: 12px;"></i> </span>
-          <span> <i class="fa-brands fa-discord fa-xl icon"></i> </span>
+          <span> <a href="https://github.com/SafuGit"> <i class="fa-brands fa-github fa-xl icon" style="margin-right: 12px;"></i> </a> </span>
+          <span> <a href="mailto:safwan55.ah@gmail.com"><i class="fab fa-google fa-xl icon" style="margin-right: 12px;"></i></a> </span>
+          <span> <a href="https://discordapp.com/users/871313769723228160"><i class="fa-brands fa-discord fa-xl icon"></i></a> </span>
 
         </div>
         <div class="nav-hamburger">
@@ -58,9 +58,14 @@
             Fullstack Developer From Bangladesh.
           </div>
           <div class="info-btns">
-            <button id="contact-btn" class="neon-red-bg"><span>Contact</span></button>
+            <button id="contact-btn" class="neon-red-bg" onclick="showContact()"><span>Contact</span></button>
             <button id="projects-btn">Projects</button>
             <button id="about-btn" class="neon-yellow-bg">About</button>
+          </div>
+          <div class="info-socials" style="display: none;">
+            <span> <a href="https://github.com/SafuGit"> <i class="fa-brands fa-github fa-xl icon" style="margin-right: 12px;"></i> </a> </span>
+            <span> <a href="mailto:safwan55.ah@gmail.com"><i class="fab fa-google fa-xl icon" style="margin-right: 12px;"></i></a> </span>
+            <span> <a href="https://discordapp.com/users/871313769723228160"><i class="fa-brands fa-discord fa-xl icon"></i></a> </span>
           </div>
         </div>
         <div class="info-img">
@@ -78,6 +83,17 @@
       </div>
     </section>
   </main>
+
+  <script>
+    function showContact() {
+      const contacts = document.querySelector('.info-socials');
+      if (contacts.style.display === 'none') {
+        contacts.style.display = 'block';
+      } else {
+        contacts.style.display = 'none';
+      }
+    }
+  </script>
 
 
   <script>
