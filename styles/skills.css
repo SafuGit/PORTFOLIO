@@ -100,8 +100,7 @@ body {
   transform: translateY(0);
 }
 
-.container .card .face.face2 .content p,
-a {
+.container .card .face.face2 .content p, .container a {
   font-size: 10pt;
   margin: 0;
   padding: 0;
