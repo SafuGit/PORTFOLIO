@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="./styles/shared.css" />
   <link rel="stylesheet" href="./styles/colors.css" />
   <link rel="stylesheet" href="./styles/about.css" />
+  <link rel="stylesheet" href="./styles/about_nav.css">
   <link rel="stylesheet" href="./sakura-js/dist/sakura.css">
 </head>
-<body class="orbitron-normal">
+<body class="cormorant-normal">
 
   <header>
     <nav>
@@ -71,6 +72,16 @@
     });
   </script>
 
+  <script src="./sakura-js/dist/sakura.js"></script>
+
   <script src="https://kit.fontawesome.com/791c82d1b4.js" crossorigin="anonymous"></script>
+
+  <script>
+    var sakura = new Sakura('body', {
+      delay: 500,
+    });
+    sakura.start();
+    sakura.stop();
+  </script>
 </body>
 </html>
