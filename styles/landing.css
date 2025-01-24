@@ -90,6 +90,11 @@ h2 {
   margin-top: 12px;
 }
 
+#about-btn:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
 .info-socials {
   margin-top: 20px;
 }
