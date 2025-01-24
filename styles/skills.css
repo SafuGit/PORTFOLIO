@@ -11,8 +11,8 @@ body {
 }
 
 .skill-btn {
-  background-color: darkmagenta;
-  border: 2px solid magenta !important;
+  background-color: black;
+  border: 2px solid darkmagenta !important;
   color: white;
 }
 
@@ -46,7 +46,8 @@ body {
 
 .container .card .face.face1 {
   position: relative;
-  background: #333;
+  background: linear-gradient(135deg, #a11fa1, #271727);
+  background-color: darkmagenta;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -63,9 +64,13 @@ body {
 }
 
 .container .card .face.face1 .content {
-  opacity: 0.2;
+  opacity: 1;
   transition: 0.5s;
   text-align: center;
+}
+
+.container .card .face.face1 .content h3 {
+  opacity: 0.6;
 }
 
 .container .card:hover .face.face1 .content {
@@ -163,4 +168,16 @@ body {
   .container .card {
     flex: 1 1 100%; 
   }
+}
+
+nav a {
+  color: white !important;
+}
+
+.dot {
+  background: linear-gradient(135deg, #a11fa1, #271727) !important;
+}
+
+.nav-dropdown li {
+  border-bottom: 1px solid darkmagenta !important;
 }
