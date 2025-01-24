@@ -7,94 +7,57 @@
   <link rel="stylesheet" href="./styles/shared.css" />
   <link rel="stylesheet" href="./styles/colors.css" />
   <link rel="stylesheet" href="./styles/about.css" />
-  <link rel="stylesheet" href="./sakura-js/dist/sakura.min.css">
+  <link rel="stylesheet" href="./sakura-js/dist/sakura.css">
 </head>
 <body>
-  <canvas></canvas>
 
-  <script src="./sakura-js/dist/sakura.min.js"></script>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="nav-content">
+          <hr style="flex-grow: 1; height: 100%; margin-right: 12px; border-color: yellow;">
+          <ul style="display: flex; align-items: center;">
+            <li><a href="./index.html"> Home </a></li>
+            <span class="dot"></span>
+            <li><a href="./skills.html"> Skills </a></li>
+            <span class="dot"></span>
+            <li><a href="./projects.html">Projects</a></li>
+            <span class="dot"></span>
+            <li><a href="./about.html">About Me</a></li>
+          </ul>
+          <hr style="flex-grow: 1; height: 100%; border-color: yellow;">
+        </div>
+        <div class="nav-socials">
+          <span> <a href="https://github.com/SafuGit"> <i class="fa-brands fa-github fa-xl icon" style="margin-right: 12px;"></i> </a> </span>
+          <span> <a href="mailto:safwan55.ah@gmail.com"><i class="fab fa-google fa-xl icon" style="margin-right: 12px;"></i></a> </span>
+          <span> <a href="https://discordapp.com/users/871313769723228160"><i class="fa-brands fa-discord fa-xl icon"></i></a> </span>
+
+        </div>
+        <div class="nav-hamburger">
+          <i class="fa-solid fa-bars fa-2xl icon" style="margin-right: 20px;"></i>
+        </div>
+      </div>
+      <hr style="border-color: yellow;">
+      <ul class="nav-dropdown">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script src="./sakura-js/dist/sakura.js"></script>
 
   <script>
-    var sakura = new Sakura('body');
-    sakura.stop(graceful);
+    var sakura = new Sakura('body', {
+      delay: 500,
+    });
+    sakura.start();
+    sakura.stop();
   </script>
-
-  <!-- <script>
-    const canvas = document.querySelector('canvas')
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
-    const ctx = canvas.getContext('2d')
-
-    const TOTAL = 100
-    const petalArray = []
-
-    const petalImg = new Image()
-    petalImg.src = 'https://djjjk9bjm164h.cloudfront.net/petal.png'
-    petalImg.addEventListener('load', () => {
-      for (let i = 0; i < TOTAL; i++) {
-        petalArray.push(new Petal())
-      }
-      render()
-    })
-
-    function render() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-      petalArray.forEach(petal => petal.animate())
-      window.requestAnimationFrame(render)
-    }
-
-    window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    })
-
-    let mouseX = 0
-    function touchHandler(e) {
-      mouseX = (e.clientX || e.touches[0].clientX) / window.innerWidth
-    }
-    window.addEventListener('mousemove', touchHandler)
-    window.addEventListener('touchmove', touchHandler)
-
-    // Petal class
-    class Petal {
-      constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = (Math.random() * canvas.height * 2) - canvas.height
-        this.w = 25 + Math.random() * 15
-        this.h = 20 + Math.random() * 10
-        this.opacity = this.w / 40
-        this.flip = Math.random()
-
-        this.xSpeed = 1.5 + Math.random() * 2
-        this.ySpeed = 1 + Math.random() * 1
-        this.flipSpeed = Math.random() * 0.03
-      }
-
-      draw() {
-        if (this.y > canvas.height || this.x > canvas.width) {
-          this.x = -petalImg.width
-          this.y = (Math.random() * canvas.height * 2) - canvas.height
-          this.xSpeed = 1.5 + Math.random() * 2
-          this.ySpeed = 1 + Math.random() * 1
-          this.flip = Math.random()
-        }
-        ctx.globalAlpha = this.opacity
-        ctx.drawImage(
-          petalImg, 
-          this.x, 
-          this.y, 
-          this.w * (0.6 + (Math.abs(Math.cos(this.flip)) / 3)), 
-          this.h * (0.8 + (Math.abs(Math.sin(this.flip)) / 5))
-        )
-      }
-
-      animate() {
-        this.x += this.xSpeed + mouseX * 5
-        this.y += this.ySpeed + mouseX * 2
-        this.flip += this.flipSpeed
-        this.draw()
-      }
-    }
-  </script> -->
 </body>
 </html>

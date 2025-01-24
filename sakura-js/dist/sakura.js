@@ -124,13 +124,17 @@ var Sakura = function Sakura(selector, options) {
     petal.style.width = "".concat(width, "px"); // Remove petals of which the animation ended.
 
     PrefixedEvent(petal, 'AnimationEnd', function () {
+      petal.style.display = "none";
       if (!elementInViewport(petal)) {
+        console.log("removing");
         petal.remove();
       }
     }); // Remove petals that float out of the viewport.
 
     PrefixedEvent(petal, 'AnimationIteration', function () {
+      petal.style.display = "none";
       if (!elementInViewport(petal)) {
+        console.log("removing");
         petal.remove();
       }
     }); // Add the petal to the target element.
