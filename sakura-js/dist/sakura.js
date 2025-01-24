@@ -33,9 +33,9 @@ var Sakura = function Sakura(selector, options) {
     // Delay between petals.
     colors: [{
       // You can add multiple colors (chosen randomly) by adding elements to the array.
-      gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+      gradientColorStart: 'rgb(255, 183, 197)',
       // Gradient color start (rgba).
-      gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+      gradientColorEnd: 'rgb(255, 197, 208)',
       // Gradient color end (rgba).
       gradientColorDegree: 120 // Gradient degree angle.
 
